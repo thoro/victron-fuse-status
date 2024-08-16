@@ -1,0 +1,11 @@
+# Build for Raspberry Pi
+
+CGO=0 GOOS=linux GOARCH=arm go build
+
+Enable raspberry pi i2c via raspi-config.
+Connect Pin 3 (sda) to the green wire from the RJ10 cable from victron.
+Connect Pin 5 (scl) to the red wire from the RJ10 cable from victron.
+
+Start the application. It provides fuse status as prometheus export on :2117/metrics
+
+

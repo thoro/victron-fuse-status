@@ -23,3 +23,6 @@ go.work.sum
 
 # env file
 .env
+
+build_and_copy.sh
+victron-fuse-status
